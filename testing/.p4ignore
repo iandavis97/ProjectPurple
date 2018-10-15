@@ -1,0 +1,8 @@
+Purple/Binaries/
+Purple/DerivedDataCache/
+Purple/Intermediate/
+Purple/Saved/
+
+*.sdf
+*.sln
+*.suo

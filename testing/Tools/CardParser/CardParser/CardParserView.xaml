@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="CardParser.CardParserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:cal="http://www.caliburnproject.org"
+             Width="500" Height="400" Margin="0,12">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top"  Margin="18,6">
+            <Button DockPanel.Dock="Right" x:Name="OpenSpreadsheet" Width="80">
+                Browse
+            </Button>
+            <Grid>
+                <TextBox x:Name="SpreadsheetPathTextBox" Text="{Binding Path=SpreadsheetPath}" Margin="0,0,6,0">
+                </TextBox>
+                <TextBlock IsHitTestVisible="False" Text="Spreadsheet Path" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="DarkGray">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=SpreadsheetPathTextBox}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+            </Grid>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top" Margin="18,6" LastChildFill="False">
+            <CheckBox DockPanel.Dock="Left" IsChecked="{Binding Path=ShouldGenerateRawJson}" VerticalAlignment="Center">
+                Write raw json file (for debbuging only)
+            </CheckBox>
+            <Button DockPanel.Dock="Right" x:Name="GenerateJson" Width="80">
+                Parse Cards
+            </Button>
+        </DockPanel>
+        <ListView Margin="18,6"
+                  ItemsSource="{Binding Path=Logs}" 
+                  x:Name="LogList"
+                  DockPanel.Dock="Bottom" 
+                  ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                  ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock TextWrapping="Wrap" 
+                               MaxWidth="{Binding ElementName=LogList,Path=ActualWidth}"
+                               Foreground="{Binding Path=Foreground}" 
+                               Text="{Binding Path=Text}">
+                    </TextBlock>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </DockPanel>
+</UserControl>

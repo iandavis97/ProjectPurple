@@ -1,0 +1,1004 @@
+{
+  "resources": [
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Shepherd",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Cowherd",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_PalestineB",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Potter",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_PalestineA",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Vintner",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_BabylonA",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Date Farmer",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_BabylonB",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Jar of Milk",
+      "type": "Starting Resource",
+      "owner": "Shepherd",
+      "text": null,
+      "value": 2,
+      "count": 1,
+      "image": "R_Milk",
+      "iconImage": "Milk"
+    },
+    {
+      "name": "Jar of Honey",
+      "type": "Starting Resource",
+      "owner": "Vintner",
+      "text": null,
+      "value": 4,
+      "count": 1,
+      "image": "R_Honey",
+      "iconImage": "Honey"
+    },
+    {
+      "name": "Sheep",
+      "type": "Starting Resource",
+      "owner": "Potter",
+      "text": null,
+      "value": 5,
+      "count": 1,
+      "image": "R_Sheep",
+      "iconImage": "Sheep"
+    },
+    {
+      "name": "Garment",
+      "type": "Starting Resource",
+      "owner": "Cowherd",
+      "text": null,
+      "value": 3,
+      "count": 1,
+      "image": "R_Garment",
+      "iconImage": "Garment"
+    },
+    {
+      "name": "Pitcher of Wine",
+      "type": "Starting Resource",
+      "owner": "Date Farmer",
+      "text": null,
+      "value": 3,
+      "count": 1,
+      "image": "R_Wine",
+      "iconImage": "Wine"
+    },
+    {
+      "name": "Jar of Honey",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 4,
+      "count": 3,
+      "image": "R_Honey",
+      "iconImage": "Honey"
+    },
+    {
+      "name": "Jar of Milk",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 2,
+      "count": 4,
+      "image": "R_Milk",
+      "iconImage": "Milk"
+    },
+    {
+      "name": "Empty Vessel",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 1,
+      "count": 5,
+      "image": "R_Empty",
+      "iconImage": "Empty"
+    },
+    {
+      "name": "Pitcher of Wine",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 3,
+      "count": 3,
+      "image": "R_Wine",
+      "iconImage": "Wine"
+    },
+    {
+      "name": "Garment",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 3,
+      "count": 3,
+      "image": "R_Garment",
+      "iconImage": "Garment"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 1,
+      "count": 3,
+      "image": "D_12a",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "2 Dinarim",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 2,
+      "count": 6,
+      "image": "D_2",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "3 Dinarim",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 3,
+      "count": 4,
+      "image": "D_3",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "4 Dinarim",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 4,
+      "count": 2,
+      "image": "D_4",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "5 Dinarim",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 5,
+      "count": 1,
+      "image": "D_5",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Jar of Honey",
+      "type": "Resource",
+      "owner": "Date Farmer",
+      "text": "Date Farmer’s quality goods. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 5,
+      "count": 4,
+      "image": "R_Honey",
+      "iconImage": "Honey"
+    },
+    {
+      "name": "Pitcher of Wine",
+      "type": "Resource",
+      "owner": "Vintner",
+      "text": "Vintner’s quality goods. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 4,
+      "count": 4,
+      "image": "R_Wine",
+      "iconImage": "Wine"
+    },
+    {
+      "name": "Jar of Milk",
+      "type": "Resource",
+      "owner": "Cowherd",
+      "text": "Cowherd’s quality goods. Illegal owners may give this to owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 3,
+      "count": 3,
+      "image": "R_Milk",
+      "iconImage": "Milk"
+    },
+    {
+      "name": "Empty Vessel",
+      "type": "Resource",
+      "owner": "Potter",
+      "text": "Potter’s quality goods. Illegal owners may give this to owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 2,
+      "count": 3,
+      "image": "R_Empty",
+      "iconImage": "Empty"
+    },
+    {
+      "name": "Garment",
+      "type": "Resource",
+      "owner": "Shepherd",
+      "text": "Shepherd’s quality goods. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 4,
+      "count": 3,
+      "image": "R_Garment",
+      "iconImage": "Garment"
+    },
+    {
+      "name": "Money-purse",
+      "type": "Resource",
+      "owner": "Date Farmer",
+      "text": "Date Farmer’s marked purse. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 2,
+      "count": 1,
+      "image": "R_Purse",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Money-purse",
+      "type": "Resource",
+      "owner": "Vintner",
+      "text": "Vintner’s marked purse. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 5,
+      "count": 1,
+      "image": "R_Purse",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Money-purse",
+      "type": "Resource",
+      "owner": "Cowherd",
+      "text": "Cowherd’s marked purse. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 4,
+      "count": 1,
+      "image": "R_Purse",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Money-purse",
+      "type": "Resource",
+      "owner": "Potter",
+      "text": "Potter’s marked purse. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 6,
+      "count": 1,
+      "image": "R_Purse",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Money-purse",
+      "type": "Resource",
+      "owner": "Shepherd",
+      "text": "Shepherd’s marked purse. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 3,
+      "count": 1,
+      "image": "R_Purse",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Cow",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 7,
+      "count": 1,
+      "image": "R_Cow",
+      "iconImage": "Cow"
+    },
+    {
+      "name": "Sheep",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 5,
+      "count": 0,
+      "image": "R_Sheep",
+      "iconImage": "Sheep"
+    },
+    {
+      "name": "Donkey",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 6,
+      "count": 1,
+      "image": "R_Donkey",
+      "iconImage": "Donkey"
+    },
+    {
+      "name": "Cow",
+      "type": "Resource",
+      "owner": "Cowherd",
+      "text": "Cowherd’s prize cow. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 8,
+      "count": 1,
+      "image": "R_Cow",
+      "iconImage": "Cow"
+    },
+    {
+      "name": "Donkey",
+      "type": "Resource",
+      "owner": "Potter",
+      "text": "Potter’s prize donkey. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 7,
+      "count": 1,
+      "image": "R_Donkey",
+      "iconImage": "Donkey"
+    },
+    {
+      "name": "Sheep",
+      "type": "Resource",
+      "owner": "Shepherd",
+      "text": "Shepherd’s prize sheep. Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 6,
+      "count": 1,
+      "image": "R_Sheep",
+      "iconImage": "Sheep"
+    },
+    {
+      "name": "Jar of Honey",
+      "type": "Resource",
+      "owner": "Stranger",
+      "text": "Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 4,
+      "count": 1,
+      "image": "R_Honey",
+      "iconImage": "Honey"
+    },
+    {
+      "name": "Jar of Milk",
+      "type": "Resource",
+      "owner": "Stranger",
+      "text": "Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 2,
+      "count": 1,
+      "image": "R_Milk",
+      "iconImage": "Milk"
+    },
+    {
+      "name": "Empty Vessel",
+      "type": "Resource",
+      "owner": "Stranger",
+      "text": "Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 1,
+      "count": 1,
+      "image": "R_Empty",
+      "iconImage": "Empty"
+    },
+    {
+      "name": "Pitcher of Wine",
+      "type": "Resource",
+      "owner": "Stranger",
+      "text": "Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression.",
+      "value": 3,
+      "count": 1,
+      "image": "R_Wine",
+      "iconImage": "Wine"
+    },
+    {
+      "name": "Garment",
+      "type": "Resource",
+      "owner": "Stranger",
+      "text": "Illegal owners may give this to the owner but may not trade it or use it towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a transgression",
+      "value": 3,
+      "count": 1,
+      "image": "R_Garment",
+      "iconImage": "Garment"
+    },
+    {
+      "name": "Cow",
+      "type": "Lost Resource",
+      "owner": "Stranger",
+      "text": "May not be traded or used towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a Transgression.",
+      "value": 7,
+      "count": 2,
+      "image": "R_Cow",
+      "iconImage": "Cow"
+    },
+    {
+      "name": "Sheep",
+      "type": "Lost Resource",
+      "owner": "Stranger",
+      "text": "May not be traded or used towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a Transgression.",
+      "value": 5,
+      "count": 2,
+      "image": "R_Sheep",
+      "iconImage": "Sheep"
+    },
+    {
+      "name": "Donkey",
+      "type": "Lost Resource",
+      "owner": "Stranger",
+      "text": "May not be traded or used towards Communal Responsibilities or events; spending on Family Responsibilities or discarding is a Transgression.",
+      "value": 6,
+      "count": 2,
+      "image": "R_Donkey",
+      "iconImage": "Donkey"
+    }
+  ],
+  "events": [
+    {
+      "name": "Money in the River",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [1],
+      "text": "You find money floating in the river.\nTreat this card as {value}.",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:10",
+      "value": 4,
+      "flags": ["persistentCard"," "],
+      "image": "E_MoneyRiver"
+    },
+    {
+      "name": "Animal Lost",
+      "type": "Individual - Lost",
+      "count": 1,
+      "seasons": [1],
+      "text": "{player_affected} puts a random one underneath this card. That animal is no longer in their hand, but may be found during Festival",
+      "player_affected": "First player in turn order with any legally owned animals",
+      "flags": ["loseResource"," persistentCard"," "],
+      "image": "E_LostAnimal"
+    },
+    {
+      "name": "Abandoned Donkey",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [1],
+      "text": "You see a stranger leave a donkey by the side of the road, neglecting to tie it down. You may ignore this card (nothing happens), keep it (transgression, treat this card as an animal of value {value} ), or return it (above and beyond the law and go straight to discard phase)",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:11",
+      "value": 6,
+      "flags": ["strangerCard"," multipleOptions"," beyondOption"," transgressionOption"," persistentCard"," ignoreOption"," "],
+      "image": "E_AbandonedDonkey"
+    },
+    {
+      "name": "Animal Runs Away",
+      "type": "Individual - Lost",
+      "count": 2,
+      "seasons": [1,2],
+      "text": "You see a neighbor’s animal run away. \n{player_affected} You may ignore it (owner discards the animal to your transgression pile) OR return it (go straight to discard phase).",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:14",
+      "player_affected": "The next player in turn order with any animals chooses a random one.",
+      "flags": ["multipleOptions"," transgressionOption"," ignoreOption"," "],
+      "image": "E_AnimalRunsAway"
+    },
+    {
+      "name": "Found an Object",
+      "type": "Individual - Found",
+      "count": 3,
+      "seasons": [1,2,3],
+      "text": "{player_affected} draws a Lost Resource card. It is not legally theirs, but counts as a card in their hand.",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:1-2",
+      "player_affected": "First player in turn order with fewer than 3 Resources",
+      "flags": ["strangerCard"," cardDraw"," "],
+      "image": "E_FoundObject"
+    },
+    {
+      "name": "Object Lost",
+      "type": "Individual - Lost",
+      "count": 3,
+      "seasons": [1,2,3],
+      "text": "{player_affected} puts a random legally owned Resource underneath this card. It is no longer in their hand, but may be found during a Festival.",
+      "player_affected": "Player with the most Family Responsibilities completed",
+      "flags": ["loseResource"," persistentCard"," "],
+      "image": "E_LostObject"
+    },
+    {
+      "name": "Abandoned Cow",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [2],
+      "text": "You see a stranger leave a cow by the side of the road, neglecting to tie it down. You may ignore this card (nothing happens), keep it (transgression, treat this card as an animal of value {value}), or return it (above and beyond the law and go straight to discard phase)",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:11",
+      "value": 7,
+      "flags": ["strangerCard"," multipleOptions"," beyondOption"," transgressionOption"," persistentCard"," ignoreOption"," "],
+      "image": "E_AbandonedCow"
+    },
+    {
+      "name": "Abandoned Sheep",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [2],
+      "text": "You see a stranger leave a sheep by the side of the road, neglecting to tie it down. You may ignore this card (nothing happens), keep it (transgression, treat this card as an animal of value {value}), or return it (above and beyond the law and go straight to discard phase)",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:11",
+      "value": 5,
+      "flags": ["strangerCard"," multipleOptions"," beyondOption"," transgressionOption"," persistentCard"," ignoreOption"," "],
+      "image": "E_AbandonedSheep"
+    },
+    {
+      "name": "Khamsin (Windstorm)",
+      "type": "Community - Disaster",
+      "count": 1,
+      "seasons": [2],
+      "text": "{player_affected} must lose a total of at least {col_cost} collectively.\nCurrent cost: {col_cost}\nFor every paid by {bonus_trigger} you, gain +{bonus} towards that total.\nIf the total cannot be paid, the game ends in destitution.",
+      "col_cost": 12,
+      "bonus_trigger": 5,
+      "bonus": 1,
+      "player_affected": "All players",
+      "flags": [],
+      "image": "E_Windstorm"
+    },
+    {
+      "name": "Festival (Sukkot)",
+      "type": "Community - Festival",
+      "count": 1,
+      "seasons": [4],
+      "text": "Perform a Festival Phase now. (All players, in turn order: declare lost/found objects, open market, draw new Responsibilities). Then draw another Event.",
+      "flags": ["negotiationTradeOption"," "],
+      "image": "E_Sukkot"
+    },
+    {
+      "name": "Found Object in the River",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [2],
+      "text": "You find an object floating in the river.\nDraw a Lost Resource. Keep as the legal owner, OR discard it (above and beyond the law).",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:10",
+      "flags": ["multipleOptions"," beyondOption"," cardDraw"," "],
+      "image": "E_FoundRiver"
+    },
+    {
+      "name": "Monsoon",
+      "type": "Community - Crisis",
+      "count": 1,
+      "seasons": [2],
+      "text": "Objective: Donate 2x the number of players in the game.\nCurrent cost: {col_cost}\nFailure: {player_affected} must pay (3) each. If any player cannot pay, the game ends in destitution.",
+      "col_cost": 0,
+      "player_affected": "all players",
+      "flags": [],
+      "image": "E_Monsoon"
+    },
+    {
+      "name": "Money-Purse in River",
+      "type": "Individual - Found",
+      "count": 2,
+      "seasons": [2,4],
+      "text": "You find a marked money-purse in the river. \nChoose one: keep it (keep this card, counts as {value}) OR return it (discard this, going above and beyond the law).",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 11:10",
+      "value": 5,
+      "flags": ["multipleOptions"," beyondOption"," persistentCard"," "],
+      "image": "E_PurseRiver"
+    },
+    {
+      "name": "Breeding",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [3],
+      "text": "{player_affected} keeps this card. It counts as an animal worth {value}",
+      "value": 6,
+      "player_affected": "First player in turn order with any legally owned animals",
+      "flags": ["persistentCard"," "],
+      "image": "E_Breeding"
+    },
+    {
+      "name": "Scholarly",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [3],
+      "text": "{player_affected} It can be used as a resource worth 3",
+      "value": 3,
+      "player_affected": "Player with the fewest Family Responsibilities keeps this card.",
+      "flags": ["persistentCard"," "],
+      "image": "E_Scholarship"
+    },
+    {
+      "name": "Money in the Dust",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [3],
+      "text": "You see a neighbor drop money in the sand at the market. \n{player_affected} chooses a random one. You may look at it and return it (above and beyond the law) or keep it.",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 14:9-10",
+      "player_affected": "The next player in turn order with any dinarim cards",
+      "flags": ["multipleOptions"," beyondOption"," "],
+      "image": "E_MoneyDust"
+    },
+    {
+      "name": "Flood",
+      "type": "Community - Disaster",
+      "count": 1,
+      "seasons": [3],
+      "text": "{player_affected} must lose a total of at least {col_cost} collectively.\nCurrent cost: {col_cost}\nFor every {bonus_trigger} paid by you, gain +1 towards that total.\nIf the total cannot be paid, the game ends in destitution.",
+      "col_cost": 10,
+      "bonus_trigger": 4,
+      "bonus": 1,
+      "player_affected": "All players",
+      "flags": [],
+      "image": "E_Flood"
+    },
+    {
+      "name": "Locusts",
+      "type": "Community - Crisis",
+      "count": 1,
+      "seasons": [3],
+      "text": "Objective: Donate {col_cost}.\nFailure: {player_affected} discard all Resources in their hands.",
+      "col_cost": 12,
+      "player_affected": "All players",
+      "flags": [],
+      "image": "E_Locusts"
+    },
+    {
+      "name": "Plague",
+      "type": "Community - Crisis",
+      "count": 1,
+      "seasons": [3],
+      "text": "Objective: Donate {col_cost}.\nFailure: {player_affected} must collectively discard a total of 8 Resource cards. If players cannot do this (or refuse to), the game ends in destitution.",
+      "col_cost": 8,
+      "player_affected": "All players",
+      "flags": [],
+      "image": "E_Plague"
+    },
+    {
+      "name": "Festival(Shavuot)",
+      "type": "Community - Festival",
+      "count": 1,
+      "seasons": [3],
+      "text": "Perform a Festival Phase now. ({player_affected}, in turn order: declare lost/found objects, open market, draw new Responsibilities). Then draw another Event.",
+      "player_affected": "All players",
+      "flags": ["negotiationTradeOption"," "],
+      "image": "E_Shavuot"
+    },
+    {
+      "name": "Bumper Crop",
+      "type": "Individual - Found",
+      "count": 2,
+      "seasons": [3,4],
+      "text": "You have an extra yield this season. \n{player_affected} draws a Resource.",
+      "player_affected": "Player with the fewest completed Family Responsibilities",
+      "flags": ["cardDraw"," "],
+      "image": "E_BumperCrop"
+    },
+    {
+      "name": "Honey Jar Cracks",
+      "type": "Individual - Lost",
+      "count": 1,
+      "seasons": [4],
+      "text": "Find the first player in turn order who owns at least one Jar of Honey. The next player after them who legally owns a Empty Vessel  chooses: ignore (Jar of Honey is discarded in their transgression pile), negotiate (Empty Vessel is lost in exchange for negotiated compensation), or help for free (Empty Vessel is lost, above and beyond the law).",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 12:1, 5-6",
+      "flags": ["loseResource"," multipleOptions"," negotiationTradeOption"," beyondOption"," transgressionOption"," ignoreOption"," "],
+      "image": "E_HoneyJarCracks"
+    },
+    {
+      "name": "Honey Jar cracks",
+      "type": "Individual - Lost",
+      "count": 1,
+      "seasons": [4],
+      "text": "Find the first player in turn order who owns at least one Jar of Honey. The next player after them who legally owns a Pitcher of Wine chooses: ignore (Jar of Honey is discarded in their transgression pile), negotiate (Pitcher of Wine is lost in exchange for negotiated compensation), or help for free (Pitcher of Wine is lost, above and beyond the law).",
+      "halachot": "Mishneh Torah, Gezelah Va'Avedah 12:1, 5-6",
+      "flags": ["loseResource"," multipleOptions"," negotiationTradeOption"," beyondOption"," transgressionOption"," ignoreOption"," "],
+      "image": "E_HoneyJarCracks"
+    },
+    {
+      "name": "Festival (Pesach)",
+      "type": "Community - Festival",
+      "count": 1,
+      "seasons": [2],
+      "text": "Perform a Festival Phase now. ({player_affected}, in turn order: declare lost/found objects, open market, draw new Responsibilities). Then draw another Event.",
+      "player_affected": "All players",
+      "flags": ["negotiationTradeOption"," "],
+      "image": "E_Pesach"
+    },
+    {
+      "name": "Fire",
+      "type": "Community - Disaster",
+      "count": 1,
+      "seasons": [4],
+      "text": "{player_affected} must lose a total of at least {col_cost} collectively.\nCurrent cost: {col_cost}\nFor every {bonus_trigger} paid by you, gain +1 towards that total.\nIf the total cannot be paid, the game ends in destitution.",
+      "col_cost": 8,
+      "bonus_trigger": 3,
+      "bonus": 1,
+      "player_affected": "All players",
+      "flags": [],
+      "image": "E_Fire"
+    },
+    {
+      "name": "Celebrate Birth",
+      "type": "Individual - Found",
+      "count": 1,
+      "seasons": [4],
+      "text": "You celebrate the birth of a new child. \nKeep this card. Treat it as {value}",
+      "value": 6,
+      "flags": ["persistentCard"," "],
+      "image": "E_Birth"
+    }
+  ],
+  "communal_responsibilities": [
+    {
+      "name": "Train a Teacher",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Education",
+      "bonus_from": "Community and Law",
+      "text": "Collectively train a teacher. Pay 14, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 14,
+      "bonus": 2,
+      "bonus_to_communal": "Food and Water",
+      "bonus_to_family": "Teach a Trade",
+      "image": "CR_Teacher"
+    },
+    {
+      "name": "Train a Scribe",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Education",
+      "bonus_from": "Community and Law",
+      "text": "Collectively train a scribe. Pay 14, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 14,
+      "bonus": 2,
+      "bonus_to_communal": "Food and Water",
+      "bonus_to_family": "Teach a Trade",
+      "image": "CR_Scribe"
+    },
+    {
+      "name": "Train a Judge",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Community and Law",
+      "bonus_from": "Public Health",
+      "text": "Collectively train a judge. Pay 12, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 12,
+      "bonus": 1,
+      "bonus_to_communal": "Education",
+      "bonus_to_family": "Teach the Law",
+      "image": "CR_Judge"
+    },
+    {
+      "name": "Build a Synagogue",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Community and Law",
+      "bonus_from": "Public Health",
+      "text": "Collectively build a Synagogue in your community. Pay 12, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 12,
+      "bonus": 1,
+      "bonus_to_communal": "Education",
+      "bonus_to_family": "Teach the Law",
+      "image": "CR_Synagogue"
+    },
+    {
+      "name": "Charity Collector",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Community and Law",
+      "bonus_from": "Public Health",
+      "text": "Collectively donate towards charity. Pay 12, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 12,
+      "bonus": 1,
+      "bonus_to_communal": "Education",
+      "bonus_to_family": "Teach the Law",
+      "image": "CR_Charity"
+    },
+    {
+      "name": "Clean Water",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Food and Water",
+      "bonus_from": "Education",
+      "text": "Collectively get access to clean water. Pay 8, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 8,
+      "bonus": 2,
+      "bonus_to_communal": "Public Health",
+      "bonus_to_family": "Marriage",
+      "image": "CR_CleanWater"
+    },
+    {
+      "name": "Train a Butcher",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Food and Water",
+      "bonus_from": "Education",
+      "text": "Collectively train a butcher. Pay 8, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}",
+      "cost": 8,
+      "bonus": 2,
+      "bonus_to_communal": "Public Health",
+      "bonus_to_family": "Marriage",
+      "image": "CR_Butcher"
+    },
+    {
+      "name": "Train a Doctor",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Public Health",
+      "bonus_from": "Food and Water",
+      "text": "Collectively train a doctor. Pay 10, -{bonus} for each {bonus_from} completed. {additional_text} {additional_bonus}.\nCurrent cost: {cost}",
+      "cost": 10,
+      "bonus": 1,
+      "bonus_to_communal": "Community and Law",
+      "bonus_to_family": "Teach to Swim",
+      "additional_text": "If Plague Event is drawn after this is complete, its donation cost is",
+      "additional_bonus": -2,
+      "image": "CR_TrainDoctor"
+    },
+    {
+      "name": "Build a Bathhouse",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Public Health",
+      "bonus_from": "Food and Water",
+      "text": "Collectively build a community bathhouse. Pay 10, -{bonus} for each {bonus_from} completed. {additional_text} {additional_bonus}.\nCurrent cost: {cost}",
+      "cost": 10,
+      "bonus": 1,
+      "bonus_to_communal": "Community and Law",
+      "bonus_to_family": "Teach to Swim",
+      "additional_text": "If Monsoon Event is drawn after this is complete, its donation cost is",
+      "additional_bonus": -2,
+      "image": "CR_Bathhouse"
+    },
+    {
+      "name": "Build a Bathroom",
+      "type": "Communal Responsibility",
+      "count": 1,
+      "category": "Public Health",
+      "bonus_from": "Food and Water",
+      "text": "Collectively build a public bathroom. Pay 10, -{bonus} for each {bonus_from} completed. {additional_text} {additional_bonus}.\nCurrent cost: {cost}",
+      "cost": 10,
+      "bonus": 1,
+      "bonus_to_communal": "Community and Law",
+      "bonus_to_family": "Teach to Swim",
+      "additional_text": "If Locust Event is drawn after this is complete, its donation cost is",
+      "additional_bonus": -2,
+      "image": "CR_Bathroom"
+    }
+  ],
+  "family_responsibilities": [
+    {
+      "name": "Teach a Trade",
+      "type": "Family Responsibility",
+      "count": 5,
+      "bonus_from": "Education",
+      "text": "Pay 11, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}\nWhen complete: {bonus_to}",
+      "cost": 11,
+      "bonus": 2,
+      "bonus_to": "Resources that list you as the owner are worth +1.",
+      "image": "FR_Trade"
+    },
+    {
+      "name": "Teach the Law",
+      "type": "Family Responsibility",
+      "count": 5,
+      "bonus_from": "Community and Law",
+      "text": "Pay 10, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}\nWhen complete: {bonus_to}",
+      "cost": 10,
+      "bonus": 2,
+      "bonus_to": "You may contribute to two Family and/or Communal Responsibilities on your turn.",
+      "image": "FR_Law"
+    },
+    {
+      "name": "Teach to Swim",
+      "type": "Family Responsibility",
+      "count": 5,
+      "bonus_from": "Public Health",
+      "text": "Pay 11, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}\nWhen complete: {bonus_to}",
+      "cost": 11,
+      "bonus": 1,
+      "bonus_to": "For any Disaster Events you draw, treat it as if 4 have already been donated",
+      "image": "FR_Swim"
+    },
+    {
+      "name": "Celebrate Marriage",
+      "type": "Family Responsibility",
+      "count": 5,
+      "bonus_from": "Food and Water",
+      "text": "Pay 12, -{bonus} for each {bonus_from} completed.\nCurrent cost: {cost}\nWhen complete: {bonus_to}",
+      "cost": 12,
+      "bonus": 1,
+      "bonus_to": "At the start of each Festival, draw a random card from the Resource discard pile.",
+      "image": "FR_Marriage"
+    },
+    {
+      "name": "Redemption of Firstborn",
+      "type": "Family Responsibility",
+      "count": 5,
+      "bonus_from": "Communal Responsibility",
+      "text": "Pay 11, -{bonus} for each {bonus_from} completed, to redeem your firstborn son from the Kohen.\nCurrent cost: {cost}\nWhen complete: {bonus_to}",
+      "cost": 11,
+      "bonus": 1,
+      "bonus_to": "Your hand size limit is now +1.",
+      "image": "FR_Firstborn"
+    }
+  ],
+  "roles": [
+    {
+      "name": "VINTNER",
+      "startingResources": "Starting resources: 1 Dinar; Jar of Honey",
+      "text": "Once on your turn, you may put one of your legally owned Resources on the bottom of the Resource deck and draw another Resource card.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Jar of Honey",
+      "image": "Role_Vintner_F"
+    },
+    {
+      "name": "VINTNER",
+      "startingResources": "Starting resources: 1 Dinar; Jar of Honey",
+      "text": "Once on your turn, you may put one of your legally owned Resources on the bottom of the Resource deck and draw another Resource card.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Jar of Honey",
+      "image": "Role_Vintner_M"
+    },
+    {
+      "name": "POTTER",
+      "startingResources": "Starting resources: 1 Dinar, Sheep",
+      "text": "When you use legally owned Empty Vessels, Jars of Milk, Vessels of Wine, or Jars of Honey on Responsibilities, Crises, or Disasters, they are worth +1 value (for Communal Responsibilities and Crises, turn the cards sideways as a reminder).",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Sheep",
+      "image": "Role_Potter_F"
+    },
+    {
+      "name": "POTTER",
+      "startingResources": "Starting Resources: 1 Dinar, Sheep",
+      "text": "When you use legally owned Empty Vessels, Jars of Milk, Vessels of Wine, or Jars of Honey on Responsibilities, Crises, or Disasters, they are worth +1 value (for Communal Responsibilities and Crises, turn the cards sideways as a reminder).",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Sheep",
+      "image": "Role_Potter_M"
+    },
+    {
+      "name": "COWHERD",
+      "startingResources": "Starting Resources: 1 Dinar, Garment",
+      "text": "Once per game, draw two extra cards from the Resource Deck. This may be done at any time on your turn.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Garment",
+      "image": "Role_Cowherd_F"
+    },
+    {
+      "name": "COWHERD",
+      "startingResources": "Starting Resources: 1 Dinar, Garment",
+      "text": "Once per game, draw two extra cards from the Resource Deck. This may be done at any time on your turn.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Garment",
+      "image": "Role_Cowherd_M"
+    },
+    {
+      "name": "SHEPHERD",
+      "startingResources": "Starting Resources: 1 Dinar, Jar of Milk",
+      "text": "Once per game, when a Resource is played or discarded by any player (including you), you may take one such card into your hand. This does not alter ownership of the card; treat it as if the card had just been drawn.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Jar of Milk",
+      "image": "Role_Shepherd_F"
+    },
+    {
+      "name": "SHEPHERD",
+      "startingResources": "Starting Resources: 1 Dinar, Jar of Milk",
+      "text": "Once per game, when a Resource is played or discarded by any player (including you), you may take one such card into your hand. This does not alter ownership of the card; treat it as if the card had just been drawn.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Jar of Milk",
+      "image": "Role_Shepherd_M"
+    },
+    {
+      "name": "DATE FARMER",
+      "startingResources": "Starting Resources: 1 Dinar, Vessel of Wine",
+      "text": "When drawing Heshbon cards to check for lost and found objects during Festival, draw two cards instead of one and uses whichever card you prefer.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Pitcher of Wine",
+      "image": "Role_Datefarmer_F"
+    },
+    {
+      "name": "DATE FARMER",
+      "startingResources": "Starting Resources: 1 Dinar, Vessel of Wine",
+      "text": "When drawing Heshbon cards to check for lost and found objects during Festival, draw two cards instead of one and uses whichever card you prefer.",
+      "type": "Starting Role",
+      "ownedObjects": "Owns: 1 Dinar, Pitcher of Wine",
+      "image": "Role_Datefarmer_M"
+    }
+  ]
+}

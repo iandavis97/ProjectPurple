@@ -1,0 +1,4 @@
+# Dont ignore any file inside this folder
+
+!*
+CardParser/config.ini
