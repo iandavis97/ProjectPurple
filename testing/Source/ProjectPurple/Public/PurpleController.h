@@ -22,38 +22,30 @@ public:
 
 	//// Drawing and game functions -------------------------------------------------
 	// draws number of resources equivalent to the property numToDraw which may be affted by responsibilities
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual TArray<UCard*> DrawResources() override;
+	virtual TArray<UCard*> DrawResources() override;
 
 	// draws a single lost resource, consequence of events
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual UCard* DrawLostResource() override;
+	virtual UCard* DrawLostResource() override;
 
 	// draws a single resource, used for events mostly
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual UCard* DrawResource() override;
+	virtual UCard* DrawResource() override;
 
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual UCard* DrawResourceDiscard() override;
+	virtual UCard* DrawResourceDiscard() override;
 
 	// Draw event card
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual void DrawEvent() override;
+	virtual void DrawEvent() override;
 
 	// Draw event card
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual void DiscardHelper(UCard* card) override;
+	virtual void DiscardHelper(UCard* card) override;
 
 	// Choose role for player
-	UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
-		virtual void SetRole() override;
+	virtual void SetRole() override;
     
     // Special function for role selecting a specific character
     UFUNCTION(BlueprintCallable, Category = "PlayerEvents")
         void SetRoleSpecial(); 
 
-	UFUNCTION(BlueprintCallable, Category = "GameHelpers")
-		virtual TArray<class UCard*> GetLegalResources() override;
+	virtual TArray<class UCard*> GetLegalResources() override;
 
 
 	// different for player than AI ------------------------------------------------------------------------------------------
