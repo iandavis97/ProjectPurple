@@ -27,9 +27,9 @@ void AProjectPurplePawn::Tick( float DeltaTime )
 }
 
 // Called to bind functionality to input
-void AProjectPurplePawn::SetupPlayerInputComponent(class UInputComponent* InputComponent)
+void AProjectPurplePawn::SetupPlayerInputComponent(class UInputComponent* inputComponent)
 {
-	Super::SetupPlayerInputComponent(InputComponent);
+	Super::SetupPlayerInputComponent(inputComponent);
 
 }
 

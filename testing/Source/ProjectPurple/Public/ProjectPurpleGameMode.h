@@ -407,7 +407,7 @@ public:
 		void SetTurnPhase(ETurnPhase phase);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "GameFunctions")
-		void OnBeginTurnPhase(ETurnPhase turnPhase);
+		void OnBeginTurnPhase(ETurnPhase Phase);
 
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		bool IsGameOver();
