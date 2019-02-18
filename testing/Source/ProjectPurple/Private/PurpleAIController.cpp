@@ -248,7 +248,7 @@ void APurpleAIController::DiscardHelper(UCard * card)
 			if (card)
 			{
 				card = nullptr;
-				GetWorld()->ForceGarbageCollection(true);
+				GEngine->ForceGarbageCollection(true);
 			}
 		}
 
