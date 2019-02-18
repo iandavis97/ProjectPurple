@@ -40,7 +40,7 @@ namespace Utils {
 			return FString("Invalid");
 		}
 
-		return EnumPtr->GetEnumName(int32(EnumValue));
+		return EnumPtr->GetNameStringByIndex(int32 (EnumValue));
 	}
 
 	template<typename TEnum>

@@ -117,7 +117,7 @@ void UParserObj::LoadCards()
 				card->properties.Add("initial_value", Property(card->GetDoubleProperty("value")));
 				card->currentOwner = card->GetStringProperty("owner");
 
-				for (int i = 0; i < num; i++)
+				for (int mylocalvar = 0; mylocalvar < num; mylocalvar++)
 				{
 					resources.Add(card);
 				}
@@ -133,7 +133,7 @@ void UParserObj::LoadCards()
 
 				card->currentOwner = card->GetStringProperty("owner");
 
-				for (int i = 0; i < num; i++)
+				for (int mylocalvar = 0; mylocalvar < num; mylocalvar++)
 				{
 					lostResources.Add(card);
 				}
@@ -152,11 +152,11 @@ void UParserObj::LoadCards()
 		{
 			auto eventDesc = eventsArr[i].Get()->AsObject().Get();
 			auto seasons = eventDesc->GetArrayField("seasons");
-			for (auto i = seasons.CreateConstIterator(); i; ++i)
+			for (auto mylocalvar = seasons.CreateConstIterator(); mylocalvar; ++mylocalvar)
 			{
 				UCard* card = ParseCard(eventDesc);
 				card->layout = ECardLayout::Event;
-				card->properties.Add("season", Property(ESeason(1 << int32((*i)->AsNumber() - 1))));
+				card->properties.Add("season", Property(ESeason(1 << int32((*mylocalvar)->AsNumber() - 1))));
 
 				if (card->ContainsProperty("value"))
 				{
