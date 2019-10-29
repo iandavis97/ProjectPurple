@@ -101,6 +101,106 @@
       "iconImage": "Wine"
     },
     {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Merchant",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Laborer",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Stonemason",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Zakat",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "1 Dinar",
+      "type": "Starting Resource",
+      "owner": "Weaver",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Small Bag of Spices",
+      "type": "Starting Resource",
+      "owner": "Merchant",
+      "text": null,
+      "value": 4,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Pomegranate Seeds",
+      "type": "Starting Resource",
+      "owner": "Laborer",
+      "text": "When New Harvest is drawn from the Event Deck, discard this card and add a Pomegranate to your Hand",
+      "value": 0,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Brick",
+      "type": "Starting Resource",
+      "owner": "Stonemason",
+      "text": "Value +1 if contributed to a Disaster",
+      "value": 2,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Empty Vessel",
+      "type": "Starting Resource",
+      "owner": "Zakat",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Flax",
+      "type": "Starting Resource",
+      "owner": "Weaver",
+      "text": null,
+      "value": 1,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
       "name": "Jar of Honey",
       "type": "Resource",
       "owner": "Any",
@@ -200,6 +300,78 @@
       "image": "D_5",
       "iconImage": "Dinar"
     },
+    
+    {
+      "name": "Olive",
+      "type": "Resource",
+      "owner": "Any",
+      "text": "Perishable, Food",
+      "value": 3,
+      "count": 3,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Meat",
+      "type": "Resource",
+      "owner": "Any",
+      "text": "Perishable, Food",
+      "value": 4,
+      "count": 3,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Pomegranate",
+      "type": "Resource",
+      "owner": "Any",
+      "text": "Perishable, Food",
+      "value": 4,
+      "count": 2,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Pomergranate Seeds",
+      "type": "Resource",
+      "owner": "Any",
+      "text": "When New Harvest is drawn from the Event Deck, discard this card and add a Pomegranate to your Hand",
+      "value": 0,
+      "count": 2,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Brick",
+      "type": "Resource",
+      "owner": "Any",
+      "text": "Value +1 if contributed to a Disater",
+      "value": 2,
+      "count": 2,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Flax",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 2,
+      "count": 4,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    {
+      "name": "Spices",
+      "type": "Resource",
+      "owner": "Any",
+      "text": null,
+      "value": 6,
+      "count": 1,
+      "image": "D_12b",
+      "iconImage": "Dinar"
+    },
+    
     {
       "name": "Jar of Honey",
       "type": "Resource",
