@@ -804,4 +804,16 @@ TArray<class UCard*> APurpleController::GetLegalResources()
 	}
 	return legals;
 }
+//show player their resources
+//player chooses a resource
+//player confirms choice
+//chosen card put at bottom of resource deck
+//player draws from resource deck
+void APurpleController::UseVintnerPower(UCard* card)
+{
+	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
+	UCard* tempCard=card;
+	playerHand.RemoveSingle(card);
+	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+}
 ;

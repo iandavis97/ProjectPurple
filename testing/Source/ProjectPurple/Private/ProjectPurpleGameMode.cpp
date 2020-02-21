@@ -1725,7 +1725,7 @@ void AProjectPurpleGameMode::AddToActiveCrises(UCard* crisis)
 	}
 	else if (crisis->name == "Monsoon")
 	{
-		// cost is 2 imes the amount of players in the game
+		// cost is 2 times the amount of players in the game
 		// just use the property setter to set col_cost to players.Num * 2
 		crisis->SetDoubleProperty("col_cost", 2 * players.Num());
 

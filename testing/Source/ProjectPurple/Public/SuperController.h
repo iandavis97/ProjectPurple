@@ -49,6 +49,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		int32 teshuvahsCompleted;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
+		bool vintnerPower;
 
 
 	// Player card containers ------------------------------------------------------
