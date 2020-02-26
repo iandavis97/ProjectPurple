@@ -815,5 +815,6 @@ void APurpleController::UseVintnerPower(UCard* card)
 	UCard* tempCard=card;
 	playerHand.RemoveSingle(card);
 	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+	vintnerPower = true;
 }
 ;

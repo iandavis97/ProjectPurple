@@ -51,7 +51,7 @@ public:
 		int32 teshuvahsCompleted;
 	//variables associated with player powers
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
-		bool vintnerPower;
+		bool vintnerPower=false;
 
 
 	// Player card containers ------------------------------------------------------
