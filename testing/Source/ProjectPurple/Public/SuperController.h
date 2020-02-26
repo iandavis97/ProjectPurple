@@ -49,6 +49,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		int32 teshuvahsCompleted;
+	//variables associated with player powers
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		bool vintnerPower;
 
