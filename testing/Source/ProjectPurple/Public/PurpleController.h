@@ -98,5 +98,5 @@ public:
 		void SubtractFromPlayerStanding(int32 value);
 	//functions for player powers
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
-		void UseVintnerPower(UCard* card);
+		void UseVintnerPower(TArray<ACardActor*> cards);
 };

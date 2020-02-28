@@ -809,11 +809,11 @@ TArray<class UCard*> APurpleController::GetLegalResources()
 //player confirms choice
 //chosen card put at bottom of resource deck
 //player draws from resource deck
-void APurpleController::UseVintnerPower(UCard* card)
+void APurpleController::UseVintnerPower(TArray<ACardActor*> cards)//accepts array but should only use 1st element
 {
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
-	UCard* tempCard=card;
-	playerHand.RemoveSingle(card);
+	UCard* tempCard=cards[0]->CardData;
+	playerHand.RemoveSingle(cards[0]->CardData);
 	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
 	vintnerPower = true;
 }
