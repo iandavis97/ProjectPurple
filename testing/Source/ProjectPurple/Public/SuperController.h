@@ -53,7 +53,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		bool vintnerPower=false;
 
-
 	// Player card containers ------------------------------------------------------
 	// Hand for the player, containing card objects
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")

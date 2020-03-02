@@ -804,6 +804,7 @@ TArray<class UCard*> APurpleController::GetLegalResources()
 	}
 	return legals;
 }
+
 //show player their resources
 //player chooses a resource
 //player confirms choice
