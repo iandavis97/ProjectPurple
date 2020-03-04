@@ -105,4 +105,6 @@ public:
 	/*DEPREACTED
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		void UseCowherdPower();*/
+	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
+		void UseShepherdPower(ACardActor* card);
 };

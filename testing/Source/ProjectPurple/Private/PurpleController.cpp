@@ -844,6 +844,10 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 	else
 		return contribution;
 }
+void APurpleController::UseShepherdPower(ACardActor* card)
+{
+
+}
 /*DEPRACTED
 //draws 2 extra Resource cards, DrawResources() should be called from BP
 void APurpleController::UseCowherdPower()

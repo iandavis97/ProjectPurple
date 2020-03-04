@@ -55,6 +55,8 @@ public:
 		bool vintnerPower=false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		bool cowherdPower = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
+		bool shepherdPower = false;
 
 	// Player card containers ------------------------------------------------------
 	// Hand for the player, containing card objects
