@@ -815,14 +815,13 @@ TArray<class UCard*> APurpleController::GetLegalResources()
 
 
 //chosen card put at bottom of resource deck
-//player draws from resource deck
+//player draws from resource deck, DrawResources() should be called from BP
 void APurpleController::UseVintnerPower(ACardActor* card)
 {
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
 	UCard* tempCard=card->CardData;
 	playerHand.RemoveSingle(card->CardData);
 	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
-	DrawResource();
 	vintnerPower = true;
 }
 
@@ -845,14 +844,14 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 	else
 		return contribution;
 }
-
-//draws 2 extra Resource cards
+/*DEPRACTED
+//draws 2 extra Resource cards, DrawResources() should be called from BP
 void APurpleController::UseCowherdPower()
 {
 	for (int i = 0; i < 2; i++)
 	{
-		DrawResource();
+		//DrawResource();
 	}
-	
-}
+	cowherdPower = true;
+}*/
 ;
