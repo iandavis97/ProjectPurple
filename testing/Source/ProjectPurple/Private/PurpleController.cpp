@@ -472,11 +472,13 @@ bool APurpleController::ContributeToFamilyResponsibilityEndGame(TArray<ACardActo
 		if (contributions[i]->CardData->currentOwner == "Any" || contributions[i]->CardData->currentOwner == currentGameMode->activePlayer->playerRole->name
 			|| contributions[i]->CardData->type == "Individual - Found")
 		{
+			contributions[i] = UsePotterPower(contributions[i]);//if potter, certain cards will have new value, otherwise no change
 			total += contributions[i]->CardData->GetDoubleProperty("value");
 		}
 		else
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Transgression for player."));
+			contributions[i] = UsePotterPower(contributions[i]);//if potter, certain cards will have new value, otherwise no change
 			total += contributions[i]->CardData->GetDoubleProperty("value");
 		}
 	}
@@ -556,6 +558,7 @@ void APurpleController::ContributeToCommunalResponsibility(TArray<ACardActor*> c
 
 	for (int i = 0; i < contributions.Num(); i++)
 	{
+		contributions[i] = UsePotterPower(contributions[i]);//if potter, certain cards will have new value, otherwise no change
 		total += contributions[i]->CardData->GetDoubleProperty("value");
 	}
 
@@ -623,6 +626,8 @@ void APurpleController::ContributeToDisaster(TArray<ACardActor*> contributions, 
 		// need to check if player paying is the active player, then modulo based on specific disasters number and check if it is equal to 0.
 		// if it is, then divide total by number and gain bonus
 
+		contributions[i] = UsePotterPower(contributions[i]);//if potter, certain cards will have new value, otherwise no change
+
 		// check if player is legal owner of each card chosen
 		total += contributions[i]->CardData->GetDoubleProperty("value");
 	}
@@ -688,6 +693,9 @@ void APurpleController::ContributeToCrisis(TArray<ACardActor*> contributions, UC
 	for (int i = 0; i < contributions.Num(); i++)
 	{
 		// check if player is legal owner of each card chosen
+
+		contributions[i] = UsePotterPower(contributions[i]);//if potter, certain cards will have new value, otherwise no change
+		
 		total += contributions[i]->CardData->GetDoubleProperty("value");
 	}
 
@@ -805,9 +813,7 @@ TArray<class UCard*> APurpleController::GetLegalResources()
 	return legals;
 }
 
-//show player their resources
-//player chooses a resource
-//player confirms choice
+
 //chosen card put at bottom of resource deck
 //player draws from resource deck
 void APurpleController::UseVintnerPower(ACardActor* card)
@@ -816,6 +822,27 @@ void APurpleController::UseVintnerPower(ACardActor* card)
 	UCard* tempCard=card->CardData;
 	playerHand.RemoveSingle(card->CardData);
 	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+	DrawResource();
 	vintnerPower = true;
+}
+
+//if card is Empty Vessel, Jar of Milk, Vessel of Wine, or Jar of Honey: value of card +1
+ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
+{
+	//checking if role is Potter to apply Ability
+	if (roleString == "POTTER")
+	{
+		//checking if card is kind to receive new value
+		if (contribution->CardData->name == "EMPTY VESSEL" || contribution->CardData->name == "JAR OF MILK"
+			|| contribution->CardData->name == "VESSEL OF WINE" || contribution->CardData->name == "JAR OF HONEY")
+		{
+			//adding +1 value to card
+			int oldValue = contribution->CardData->GetDoubleProperty("value");
+			contribution->CardData->SetDoubleProperty("value",oldValue+1);
+		}
+		return contribution;
+	}
+	else
+		return contribution;
 }
 ;

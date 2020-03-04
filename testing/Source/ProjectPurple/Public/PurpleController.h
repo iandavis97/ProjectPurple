@@ -96,7 +96,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		void SubtractFromPlayerStanding(int32 value);
+
 	//functions for player powers
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		void UseVintnerPower(ACardActor* card);
+	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
+		ACardActor* UsePotterPower(ACardActor* contribution);
 };
