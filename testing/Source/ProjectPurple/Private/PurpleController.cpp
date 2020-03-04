@@ -845,4 +845,14 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 	else
 		return contribution;
 }
+
+//draws 2 extra Resource cards
+void APurpleController::UseCowherdPower()
+{
+	for (int i = 0; i < 2; i++)
+	{
+		DrawResource();
+	}
+	
+}
 ;

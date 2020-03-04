@@ -102,4 +102,6 @@ public:
 		void UseVintnerPower(ACardActor* card);
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		ACardActor* UsePotterPower(ACardActor* contribution);
+	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
+		void UseCowherdPower();
 };

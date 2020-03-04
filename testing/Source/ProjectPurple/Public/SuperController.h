@@ -49,9 +49,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		int32 teshuvahsCompleted;
+
 	//variables associated with player powers
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		bool vintnerPower=false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
+		bool cowherdPower = false;
 
 	// Player card containers ------------------------------------------------------
 	// Hand for the player, containing card objects
