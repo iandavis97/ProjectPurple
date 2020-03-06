@@ -844,9 +844,22 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 	else
 		return contribution;
 }
-void APurpleController::UseShepherdPower(ACardActor* card)
+UCard* APurpleController::UseShepherdPower(UCard* draw)
 {
+	if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
+	{
+		playerFoundObjects.Add(draw);
+	}
 
+
+	if (trade == true && draw->currentOwner == playerRole->name)
+	{
+		draw->SetDoubleProperty("value", (draw->GetDoubleProperty("value") + 1));
+	}
+
+	playerHand.Add(draw);
+
+	return draw;
 }
 /*DEPRACTED
 //draws 2 extra Resource cards, DrawResources() should be called from BP

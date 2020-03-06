@@ -106,5 +106,5 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		void UseCowherdPower();*/
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
-		void UseShepherdPower(ACardActor* card);
+		UCard* UseShepherdPower(UCard* draw);
 };
