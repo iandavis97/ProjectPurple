@@ -1774,7 +1774,7 @@ FHeshbon AProjectPurpleGameMode::GetHeshbonByType(EHeshbonType type)
 	int maxWeight = 0;
 	FHeshbon candidates[sizeof(HESHBON) / sizeof(FHeshbon)] = { { 0 } };
 
-	// accumulated weight of all heshmon of the desired type.
+	// accumulated weight of all heshbon of the desired type.
 	int candidatesCount = 0;
 	for (auto h : HESHBON) {
 		if (h.type == type) {

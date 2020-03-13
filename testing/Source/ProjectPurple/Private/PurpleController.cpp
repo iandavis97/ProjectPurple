@@ -852,6 +852,7 @@ void APurpleController::UseShepherdPower(UCard* draw)
 	}
 
 	playerHand.Add(draw);
+	shepherdPower = true;
 
 }
 /*DEPRECATED
