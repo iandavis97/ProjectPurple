@@ -153,8 +153,6 @@ class PROJECTPURPLE_API AProjectPurpleGameMode : public AGameMode
 
 public:
     
-    
-    
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "GameMode Properties")
 		UWorld* World;
