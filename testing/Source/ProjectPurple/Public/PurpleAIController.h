@@ -111,4 +111,6 @@ public:
 		void UseShepherdPower(UCard* draw);
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		UCard* UsePotterPower(UCard* contribution);
+	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
+		void UseVintnerPower(ACardActor* card);
 };
