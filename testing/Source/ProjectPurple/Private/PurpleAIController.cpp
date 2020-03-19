@@ -381,6 +381,7 @@ TArray<class UCard*> APurpleAIController::ContributeToCommunalResponsibility()
 
 			if (legals[midIndex]->GetDoubleProperty("value") >= avg)
 			{
+				legals[midIndex] = UsePotterPower(legals[midIndex]);
 				total += legals[midIndex]->GetDoubleProperty("value");
 				returns.Add(legals[midIndex]);
 			}
@@ -388,6 +389,7 @@ TArray<class UCard*> APurpleAIController::ContributeToCommunalResponsibility()
 			{
 				for (int i = midIndex; i < legals.Num(); i++)
 				{
+					legals[midIndex] = UsePotterPower(legals[midIndex]);
 					total += legals[i]->GetDoubleProperty("value");
 					returns.Add(legals[i]);
 				}
@@ -401,6 +403,7 @@ TArray<class UCard*> APurpleAIController::ContributeToCommunalResponsibility()
 
 			if (legals[midIndex]->GetDoubleProperty("value") >= avg)
 			{
+				legals[midIndex] = UsePotterPower(legals[midIndex]);
 				total += legals[midIndex]->GetDoubleProperty("value");
 				returns.Add(legals[midIndex]);
 			}
@@ -408,6 +411,7 @@ TArray<class UCard*> APurpleAIController::ContributeToCommunalResponsibility()
 			{
 				for (int i = midIndex; i < legals.Num(); i++)
 				{
+					legals[midIndex] = UsePotterPower(legals[midIndex]);
 					total += legals[i]->GetDoubleProperty("value");
 					returns.Add(legals[i]);
 				}
@@ -530,6 +534,7 @@ TArray<UCard*> APurpleAIController::ContributeToDisaster()
 
 		if (legals[midIndex]->GetDoubleProperty("value") >= avg)
 		{
+			legals[midIndex] = UsePotterPower(legals[midIndex]);
 			total += legals[midIndex]->GetDoubleProperty("value");
 			returns.Add(legals[midIndex]);
 		}
@@ -537,6 +542,7 @@ TArray<UCard*> APurpleAIController::ContributeToDisaster()
 		{
 			for (int i = midIndex; i < legals.Num(); i++)
 			{
+				legals[midIndex] = UsePotterPower(legals[midIndex]);
 				total += legals[i]->GetDoubleProperty("value");
 				returns.Add(legals[i]);
 			}
@@ -643,6 +649,7 @@ TArray<UCard*> APurpleAIController::ContributeToCrisis()
 
 		if (legals[midIndex]->GetDoubleProperty("value") >= avg)
 		{
+			legals[midIndex] = UsePotterPower(legals[midIndex]);
 			total += legals[midIndex]->GetDoubleProperty("value");
 			returns.Add(legals[midIndex]);
 		}
@@ -650,6 +657,7 @@ TArray<UCard*> APurpleAIController::ContributeToCrisis()
 		{
 			for (int i = midIndex; i < legals.Num(); i++)
 			{
+				legals[midIndex] = UsePotterPower(legals[midIndex]);
 				total += legals[i]->GetDoubleProperty("value");
 				returns.Add(legals[i]);
 			}
@@ -718,6 +726,7 @@ bool APurpleAIController::ShouldContributeToFamily()
 	{
 		for (int i = 0; i < legals.Num(); i++)
 		{
+			legals[i] = UsePotterPower(legals[i]);
 			total += legals[i]->GetDoubleProperty("value");
 
 			if (total >= family->GetDoubleProperty("cost"))
@@ -732,6 +741,7 @@ bool APurpleAIController::ShouldContributeToFamily()
 		{
 			for (int i = 0; i < playerHand.Num(); i++)
 			{
+				playerHand[i] = UsePotterPower(playerHand[i]);
 				total += playerHand[i]->GetDoubleProperty("value");
 
 				if (total >= family->GetDoubleProperty("cost"))
@@ -767,6 +777,7 @@ bool APurpleAIController::ShouldContributeToFamilyEndGame(int32 costModifer)
 	{
 		for (int i = 0; i < legals.Num(); i++)
 		{
+			legals[i] = UsePotterPower(legals[i]);
 			total += legals[i]->GetDoubleProperty("value");
 
 			if (total >= family->GetDoubleProperty("cost"))
@@ -781,6 +792,7 @@ bool APurpleAIController::ShouldContributeToFamilyEndGame(int32 costModifer)
 		{
 			for (int i = 0; i < playerHand.Num(); i++)
 			{
+				playerHand[i] = UsePotterPower(playerHand[i]);
 				total += playerHand[i]->GetDoubleProperty("value");
 
 				if (total >= family->GetDoubleProperty("cost"))
@@ -834,6 +846,7 @@ TArray<UCard*> APurpleAIController::ContributeToFamilyResponsibility(int32 costM
 	{
 		for (int i = 0; i < legals.Num(); i++)
 		{
+			legals[i] = UsePotterPower(legals[i]);
 			sum += legals[i]->GetDoubleProperty("value");
 
 			if (sum >= family->GetDoubleProperty("cost"))
@@ -868,6 +881,7 @@ TArray<UCard*> APurpleAIController::ContributeToFamilyResponsibility(int32 costM
 
 				for (int j = 0; j <= i; j++)
 				{
+					legals[j] = UsePotterPower(legals[j]);
 					contributions.Add(legals[j]);
 				}
 
@@ -913,6 +927,7 @@ TArray<UCard*> APurpleAIController::ContributeToFamilyResponsibility(int32 costM
 
 		for (int i = 0; i < sortedHand.Num(); i++)
 		{
+			sortedHand[i] = UsePotterPower(sortedHand[i]);
 			sum += sortedHand[i]->GetDoubleProperty("value");
 
 			if (sum >= family->GetDoubleProperty("cost"))
@@ -944,6 +959,7 @@ TArray<UCard*> APurpleAIController::ContributeToFamilyResponsibility(int32 costM
 
 				for (int j = 0; j <= i; j++)
 				{
+					sortedHand[j] = UsePotterPower(sortedHand[j]);
 					contributions.Add(sortedHand[j]);
 				}
 
@@ -1221,5 +1237,42 @@ int32 APurpleAIController::FindHighestCostFamily()
 	}
 
 	return index;
+}
+//the following functions handle AI powers
+void APurpleAIController::UseShepherdPower(UCard* draw)
+{
+	if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
+	{
+		playerFoundObjects.Add(draw);
+	}
+
+	playerHand.Add(draw);
+	shepherdPower = true;
+
+}
+//if card is Empty Vessel, Jar of Milk, Vessel of Wine, or Jar of Honey: value of card +1
+UCard* APurpleAIController::UsePotterPower(UCard* contribution)
+{
+	//checking if role is Potter to apply Ability
+	if (roleString == "POTTER")
+	{
+		//checking if legal owner
+		if (contribution->currentOwner == playerRole->name || contribution->currentOwner == "Any")
+		{
+			//checking if card is kind to receive new value
+			if (contribution->name == "EMPTY VESSEL" || contribution->name == "JAR OF MILK"
+				|| contribution->name == "VESSEL OF WINE" || contribution->name == "JAR OF HONEY")
+			{
+				//adding +1 value to card
+				int oldValue = contribution->GetDoubleProperty("value");
+				contribution->SetDoubleProperty("value", oldValue + 1);
+			}
+			return contribution;
+		}
+		else
+			return contribution;
+	}
+	else
+		return contribution;
 }
 ;

@@ -831,15 +831,21 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 	//checking if role is Potter to apply Ability
 	if (roleString == "POTTER")
 	{
-		//checking if card is kind to receive new value
-		if (contribution->CardData->name == "EMPTY VESSEL" || contribution->CardData->name == "JAR OF MILK"
-			|| contribution->CardData->name == "VESSEL OF WINE" || contribution->CardData->name == "JAR OF HONEY")
+		//checking if legal owner
+		if (contribution->CardData->currentOwner == playerRole->name || contribution->CardData->currentOwner == "Any")
 		{
-			//adding +1 value to card
-			int oldValue = contribution->CardData->GetDoubleProperty("value");
-			contribution->CardData->SetDoubleProperty("value",oldValue+1);
+			//checking if card is kind to receive new value
+			if (contribution->CardData->name == "EMPTY VESSEL" || contribution->CardData->name == "JAR OF MILK"
+				|| contribution->CardData->name == "VESSEL OF WINE" || contribution->CardData->name == "JAR OF HONEY")
+			{
+				//adding +1 value to card
+				int oldValue = contribution->CardData->GetDoubleProperty("value");
+				contribution->CardData->SetDoubleProperty("value", oldValue + 1);
+			}
+			return contribution;
 		}
-		return contribution;
+		else
+			return contribution;
 	}
 	else
 		return contribution;

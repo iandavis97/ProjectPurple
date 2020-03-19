@@ -156,7 +156,8 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "GameMode Properties")
 		UWorld* World;
-
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "GameMode Properties")
+		bool AIDatePowerCheck = false;//ensures AI won't get stuck in loop
 	// Card BP declaration for card actors
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "BP Classes")
 		UClass* CardBlueprint;

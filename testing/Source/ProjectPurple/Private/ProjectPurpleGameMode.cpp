@@ -1865,10 +1865,22 @@ TArray<UCard*> AProjectPurpleGameMode::TradeFromHumanToAI(const TArray<UCard*>& 
 	TArray<UCard*> AILegals;
 
 	int32 sum = 0;
-
+	int32 potterSum = 0;
 	for (int i = 0; i < humanCards.Num(); i++)
 	{
-		sum += humanCards[i]->GetDoubleProperty("value");
+		//if AI is Potter, consider relevant cards to be of +1 value
+		if (AIPlayer->roleString == "POTTER")
+		{
+			//checking for relevant cards
+			if (humanCards[i]->name == "EMPTY VESSEL" || humanCards[i]->name == "JAR OF MILK"
+				|| humanCards[i]->name == "VESSEL OF WINE" || humanCards[i]->name == "JAR OF HONEY")
+			{
+				sum += humanCards[i]->GetDoubleProperty("value")+1;
+				potterSum+= humanCards[i]->GetDoubleProperty("value") + 1;
+			}
+		}
+		else
+			sum += humanCards[i]->GetDoubleProperty("value");
 	}
 
 	if (AIPlayer->IsA(APurpleAIController::StaticClass()))
@@ -1917,7 +1929,6 @@ TArray<UCard*> AProjectPurpleGameMode::TradeFromHumanToAI(const TArray<UCard*>& 
 			}
 		}
 	}
-
 	return AIOffer;
 }
 
