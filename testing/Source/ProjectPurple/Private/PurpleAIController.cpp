@@ -1275,12 +1275,46 @@ UCard* APurpleAIController::UsePotterPower(UCard* contribution)
 	else
 		return contribution;
 }
-void APurpleAIController::UseVintnerPower(ACardActor* card)
+TArray<class UCard*> APurpleAIController::UseVintnerPower()
 {
+	//AI should find legally owned resources worth 2 or less, discard lowest value one
+	//if tie, choose arbitrarily
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
-	UCard* tempCard = card->CardData;
-	playerHand.RemoveSingle(card->CardData);
-	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+	TArray<UCard*>legals = GetLegalResources();
+	TArray<UCard*>lowValueCards;
+	TArray<UCard*> discard;//return value, should have size of one
+	//finding lowest value cards
+	for (int i = 0; i < legals.Num(); i++)
+	{
+		if(legals[i]->GetDoubleProperty("value")<=2)
+			lowValueCards.Push(legals[i]);
+	}
 	vintnerPower = true;
+	//finding lowest cards
+	if (lowValueCards.Num() > 1)//only loop if more than 1 low value card
+	{
+		int32 lowestValueIndex = 0;
+		int32 lowestValue = 2;
+		for (int i = 0; i < lowValueCards.Num(); i++)
+		{
+			if (lowValueCards[i]->GetDoubleProperty("value") <= lowestValue)
+			{
+				lowestValueIndex = i;
+				lowestValue = lowValueCards[i]->GetDoubleProperty("value");
+			}
+		}
+		discard.Push(lowValueCards[lowestValueIndex]);
+		UCard* tempCard = discard[0];
+		playerHand.RemoveSingle(discard[0]);
+		currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+		return discard;
+	}
+	else
+	{
+		UCard* tempCard = lowValueCards[0];
+		playerHand.RemoveSingle(lowValueCards[0]);
+		currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+		return lowValueCards;
+	}
 }
 ;
