@@ -1287,8 +1287,10 @@ TArray<class UCard*> APurpleAIController::UseVintnerPower()
 	//finding lowest value cards
 	for (int i = 0; i < legals.Num(); i++)
 	{
-		if(legals[i]->GetDoubleProperty("value")<=2)
+		if (legals[i]->GetDoubleProperty("value") <= 2)
 			lowValueCards.Push(legals[i]);
+		else
+			return discard;
 	}
 	vintnerPower = true;
 	//finding lowest cards
