@@ -204,7 +204,8 @@ TArray<class UCard*> APurpleAIController::GetLegalResources()
 	// loops through hand checking if resource is legal or not
 	for (int i = 0; i < playerHand.Num(); i++)
 	{
-		if (playerHand[i]->currentOwner == "Any" || playerHand[i]->currentOwner == playerRole->name || playerHand[i]->type == "Individual - Found")
+		if (playerHand[i]->currentOwner == "Any" || playerHand[i]->currentOwner == playerRole->name 
+			|| (playerHand[i]->type == "Individual - Found")&& !Transgressions.Contains(playerHand[i]))
 		{
 			legals.Add(playerHand[i]);
 		}
