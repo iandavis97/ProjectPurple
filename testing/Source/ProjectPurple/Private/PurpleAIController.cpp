@@ -1309,7 +1309,7 @@ TArray<class UCard*> APurpleAIController::UseVintnerPower()
 		discard.Push(lowValueCards[lowestValueIndex]);
 		UCard* tempCard = discard[0];
 		playerHand.RemoveSingle(discard[0]);
-		currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+		currentGameMode->resourcesList.Insert(tempCard,0);//should add card to bottom of resource deck
 		return discard;
 	}
 	else

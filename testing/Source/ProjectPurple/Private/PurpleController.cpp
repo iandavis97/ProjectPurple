@@ -822,7 +822,7 @@ void APurpleController::UseVintnerPower(ACardActor* card)
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
 	UCard* tempCard=card->CardData;
 	playerHand.RemoveSingle(card->CardData);
-	currentGameMode->resourcesList.Push(tempCard);//should add card to bottom of resource deck
+	currentGameMode->resourcesList.Insert(tempCard,0);//should add card to bottom of resource deck
 	vintnerPower = true;
 }
 
