@@ -1873,7 +1873,7 @@ TArray<UCard*> AProjectPurpleGameMode::TradeFromHumanToAI(const TArray<UCard*>& 
 		{
 			//checking for relevant cards
 			if (humanCards[i]->name == "EMPTY VESSEL" || humanCards[i]->name == "JAR OF MILK"
-				|| humanCards[i]->name == "VESSEL OF WINE" || humanCards[i]->name == "JAR OF HONEY")
+				|| humanCards[i]->name == "PITCHER OF WINE" || humanCards[i]->name == "JAR OF HONEY")
 			{
 				sum += humanCards[i]->GetDoubleProperty("value")+1;
 				potterSum+= humanCards[i]->GetDoubleProperty("value") + 1;
@@ -1905,6 +1905,16 @@ TArray<UCard*> AProjectPurpleGameMode::TradeFromHumanToAI(const TArray<UCard*>& 
 			// will give an ok offer
 			for (int i = AILegals.Num() - 1; i >= 0; i--)
 			{
+				//checks if human is Potter to consider giving them relevant cards
+				if (humanPlayer->roleString == "POTTER")
+				{
+					if (AILegals[i]->name == "EMPTY VESSEL" || AILegals[i]->name == "JAR OF MILK"
+						|| AILegals[i]->name == "PITCHER OF WINE" || AILegals[i]->name == "JAR OF HONEY")
+					{
+						int oldValue = AILegals[i]->GetDoubleProperty("value");
+						AILegals[i]->SetDoubleProperty("value", oldValue + 1);
+					}
+				}
 				legalSum += AILegals[i]->GetDoubleProperty("value");
 				AIOffer.Add(AILegals[i]);
 
@@ -1919,6 +1929,16 @@ TArray<UCard*> AProjectPurpleGameMode::TradeFromHumanToAI(const TArray<UCard*>& 
 			// will propose a lower offer than received
 			for (int i = AILegals.Num() - 1; i >= 0; i--)
 			{
+				//checks if human is Potter to consider giving them relevant cards
+				if (humanPlayer->roleString == "POTTER")
+				{
+					if (AILegals[i]->name == "EMPTY VESSEL" || AILegals[i]->name == "JAR OF MILK"
+						|| AILegals[i]->name == "PITCHER OF WINE" || AILegals[i]->name == "JAR OF HONEY")
+					{
+						int oldValue = AILegals[i]->GetDoubleProperty("value");
+						AILegals[i]->SetDoubleProperty("value", oldValue + 1);
+					}
+				}
 				legalSum += AILegals[i]->GetDoubleProperty("value");
 				AIOffer.Add(AILegals[i]);
 
