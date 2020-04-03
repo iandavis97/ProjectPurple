@@ -1262,7 +1262,7 @@ UCard* APurpleAIController::UsePotterPower(UCard* contribution)
 		{
 			//checking if card is kind to receive new value
 			if (contribution->name == "EMPTY VESSEL" || contribution->name == "JAR OF MILK"
-				|| contribution->name == "VESSEL OF WINE" || contribution->name == "JAR OF HONEY")
+				|| contribution->name == "PITCHER OF WINE" || contribution->name == "JAR OF HONEY")
 			{
 				//adding +1 value to card
 				int oldValue = contribution->GetDoubleProperty("value");

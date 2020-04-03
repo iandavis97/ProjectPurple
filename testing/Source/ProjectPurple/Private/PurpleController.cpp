@@ -383,11 +383,13 @@ bool APurpleController::ContributeToFamilyResponsibility(TArray<ACardActor*> con
 		if (contributions[i]->CardData->currentOwner == "Any" || contributions[i]->CardData->currentOwner == currentGameMode->activePlayer->playerRole->name
 			|| contributions[i]->CardData->type == "Individual - Found")
 		{
+			contributions[i] = UsePotterPower(contributions[i]);
 			total += contributions[i]->CardData->GetDoubleProperty("value");
 		}
 		else
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Transgression for player."));
+			contributions[i] = UsePotterPower(contributions[i]);
 			total += contributions[i]->CardData->GetDoubleProperty("value");
 		}
 	}
@@ -837,7 +839,7 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 		{
 			//checking if card is kind to receive new value
 			if (contribution->CardData->name == "EMPTY VESSEL" || contribution->CardData->name == "JAR OF MILK"
-				|| contribution->CardData->name == "VESSEL OF WINE" || contribution->CardData->name == "JAR OF HONEY")
+				|| contribution->CardData->name == "PITCHER OF WINE" || contribution->CardData->name == "JAR OF HONEY")
 			{
 				//adding +1 value to card
 				int oldValue = contribution->CardData->GetDoubleProperty("value");
