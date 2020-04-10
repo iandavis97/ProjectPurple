@@ -216,8 +216,9 @@ void APurpleController::SetRole()
 		{
 			ind = 0;
 		}
-
-		playerRole = currentGameMode->maleRolesList[6];//replace with ind
+		//playerRole = currentGameMode->rolesList[6];
+		
+		playerRole = currentGameMode->maleRolesList[ind];
 		roleString = FString(playerRole->name);
 		currentGameMode->maleRolesList.RemoveAt(ind);
 		currentGameMode->femaleRolesList.RemoveAt(ind);
