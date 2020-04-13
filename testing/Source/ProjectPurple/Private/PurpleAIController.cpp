@@ -1240,14 +1240,16 @@ int32 APurpleAIController::FindHighestCostFamily()
 	return index;
 }
 //the following functions handle AI powers
-void APurpleAIController::UseShepherdPower(UCard* draw)
+void APurpleAIController::UseShepherdPower()
 {
-	if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
+	//is tracking most recently discarded card for shepherd to take
+	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
+	if (currentGameMode->shepherdPowerCard->currentOwner != playerRole->name && currentGameMode->shepherdPowerCard->currentOwner != "Any")
 	{
-		playerFoundObjects.Add(draw);
+		playerFoundObjects.Add(currentGameMode->shepherdPowerCard);
 	}
 
-	playerHand.Add(draw);
+	playerHand.Add(currentGameMode->shepherdPowerCard);
 	shepherdPower = true;
 
 }

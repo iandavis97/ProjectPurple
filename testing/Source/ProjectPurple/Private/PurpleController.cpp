@@ -167,6 +167,8 @@ void APurpleController::DiscardHelper(UCard * card)
 			card->currentOwner = card->GetStringProperty("owner");
 			card->SetDoubleProperty("value", (card->GetDoubleProperty("initial_value")));
 			currentGameMode->resourcesListDiscard.Add(card);
+			//tracking for shepherd ability
+			currentGameMode->shepherdPowerCard = card;
 		}
 
 		else if (card->type == "Starting Resource")
@@ -183,6 +185,8 @@ void APurpleController::DiscardHelper(UCard * card)
 			card->currentOwner = card->GetStringProperty("owner");
 			card->SetDoubleProperty("value", (card->GetDoubleProperty("initial_value")));
 			currentGameMode->lostResourcesDiscard.Add(card);
+			//tracking for shepherd ability
+			currentGameMode->shepherdPowerCard = card;
 		}
 	}
 }
@@ -854,14 +858,16 @@ ACardActor* APurpleController::UsePotterPower(ACardActor* contribution)
 	else
 		return contribution;
 }
-void APurpleController::UseShepherdPower(UCard* draw)
+void APurpleController::UseShepherdPower()
 {
-	if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
+	//is tracking most recently discarded card for shepherd to take
+	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
+	if (currentGameMode->shepherdPowerCard->currentOwner != playerRole->name && currentGameMode->shepherdPowerCard->currentOwner != "Any")
 	{
-		playerFoundObjects.Add(draw);
+		playerFoundObjects.Add(currentGameMode->shepherdPowerCard);
 	}
 
-	playerHand.Add(draw);
+	playerHand.Add(currentGameMode->shepherdPowerCard);
 	shepherdPower = true;
 
 }
