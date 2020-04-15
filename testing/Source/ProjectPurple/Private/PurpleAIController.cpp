@@ -1240,18 +1240,23 @@ int32 APurpleAIController::FindHighestCostFamily()
 	return index;
 }
 //the following functions handle AI powers
-void APurpleAIController::UseShepherdPower()
+bool APurpleAIController::UseShepherdPower()
 {
 	//is tracking most recently discarded card for shepherd to take
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
-	if (currentGameMode->shepherdPowerCard->currentOwner != playerRole->name && currentGameMode->shepherdPowerCard->currentOwner != "Any")
+	UCard* draw = currentGameMode->shepherdPowerCard;
+	//AI will only discard >=5
+	if (draw->GetDoubleProperty("value") >= 5)
 	{
-		playerFoundObjects.Add(currentGameMode->shepherdPowerCard);
+		if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
+		{
+			playerFoundObjects.Add(draw);
+		}
+
+		playerHand.Add(draw);
+		shepherdPower = true;
 	}
-
-	playerHand.Add(currentGameMode->shepherdPowerCard);
-	shepherdPower = true;
-
+	return shepherdPower;
 }
 //if card is Empty Vessel, Jar of Milk, Vessel of Wine, or Jar of Honey: value of card +1
 UCard* APurpleAIController::UsePotterPower(UCard* contribution)

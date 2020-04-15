@@ -108,7 +108,7 @@ public:
         TArray<class UCard*> SortCards(TArray<class UCard*> cards);
 	//the following functions handle AI power logic
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
-		void UseShepherdPower();
+		bool UseShepherdPower();
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
 		UCard* UsePotterPower(UCard* contribution);
 	UFUNCTION(BlueprintCallable, Category = "GameFunctions")
