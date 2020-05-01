@@ -1249,7 +1249,7 @@ bool APurpleAIController::UseShepherdPower()
 	//is tracking most recently discarded card for shepherd to take
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
 	UCard* draw = currentGameMode->shepherdPowerCard;
-	//AI will only discard >=5
+	//AI will only take discard >=5 in value
 	if (draw->GetDoubleProperty("value") >= 5)
 	{
 		if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
