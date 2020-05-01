@@ -242,6 +242,8 @@ void APurpleAIController::DiscardHelper(UCard * card)
 			card->currentOwner = (card->GetStringProperty("owner"));
 			card->SetDoubleProperty("value", (card->GetDoubleProperty("initial_value")));
 			currentGameMode->resourcesListDiscard.Add(card);
+			//tracking discard for shepherd power
+			currentGameMode->shepherdPowerCard = card;
 		}
 
 		else if (card->type == "Starting Resource")
@@ -258,6 +260,8 @@ void APurpleAIController::DiscardHelper(UCard * card)
 			card->currentOwner = (card->GetStringProperty("owner"));
 			card->SetDoubleProperty("value", (card->GetDoubleProperty("initial_value")));
 			currentGameMode->lostResourcesDiscard.Add(card);
+			//tracking discard for shepherd power
+			currentGameMode->shepherdPowerCard = card;
 		}
 	}
 }
