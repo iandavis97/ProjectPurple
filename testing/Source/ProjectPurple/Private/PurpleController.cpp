@@ -862,13 +862,20 @@ void APurpleController::UseShepherdPower()
 {
 	//is tracking most recently discarded card for shepherd to take
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
-	if (currentGameMode->shepherdPowerCard->currentOwner != playerRole->name && currentGameMode->shepherdPowerCard->currentOwner != "Any")
+	int index = 0;
+	for (int i = 0; i < currentGameMode->players.Num(); i++)
 	{
-		playerFoundObjects.Add(currentGameMode->shepherdPowerCard);
+		if (currentGameMode->players[i]->roleString == "SHEPHERD")
+			index = i;
+	}
+	if (currentGameMode->shepherdPowerCard->currentOwner != currentGameMode->players[index]->playerRole->name 
+		&& currentGameMode->shepherdPowerCard->currentOwner != "Any")
+	{
+		currentGameMode->players[index]->playerFoundObjects.Add(currentGameMode->shepherdPowerCard);
 	}
 
-	playerHand.Add(currentGameMode->shepherdPowerCard);
-	shepherdPower = true;
+	currentGameMode->players[index]->playerHand.Add(currentGameMode->shepherdPowerCard);
+	currentGameMode->shepherdPower = true;
 
 }
 /*DEPRECATED

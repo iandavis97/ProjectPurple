@@ -161,6 +161,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "GameMode Properties")
 		bool AIDatePowerCheck = false;//ensures AI won't get stuck in loop
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "GameMode Properties")
+		bool shepherdPower=false;//used for shepherd's ability
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "GameMode Properties")
 		UCard* shepherdPowerCard;//used to track recently discarded card for shepherd to take
 	// Card BP declaration for card actors
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "BP Classes")

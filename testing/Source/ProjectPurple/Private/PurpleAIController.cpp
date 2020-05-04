@@ -1249,18 +1249,27 @@ bool APurpleAIController::UseShepherdPower()
 	//is tracking most recently discarded card for shepherd to take
 	AProjectPurpleGameMode* currentGameMode = static_cast<AProjectPurpleGameMode*>(GetWorld()->GetAuthGameMode());
 	UCard* draw = currentGameMode->shepherdPowerCard;
-	//AI will only take discard >=5 in value
-	if (draw->GetDoubleProperty("value") >= 5)
+
+	int index = 0;//getting index of shepherd
+	//getting index of shepherd
+	for (int i = 0; i < currentGameMode->players.Num(); i++)
 	{
-		if (draw->currentOwner != playerRole->name && draw->currentOwner != "Any")
+		if (currentGameMode->players[i]->roleString == "SHEPHERD")
+			index = i;
+	}
+	//AI will only take discard >=5 in value
+	if (draw->GetDoubleProperty("value") >=5)
+	{
+		if (draw->currentOwner != currentGameMode->players[index]->playerRole->name 
+			&& draw->currentOwner != "Any")
 		{
-			playerFoundObjects.Add(draw);
+			currentGameMode->players[index]->playerFoundObjects.Add(draw);
 		}
 
-		playerHand.Add(draw);
-		shepherdPower = true;
+		currentGameMode->players[index]->playerHand.Add(draw);
+		currentGameMode->shepherdPower = true;
 	}
-	return shepherdPower;
+	return currentGameMode->shepherdPower;
 }
 //if card is Empty Vessel, Jar of Milk, Vessel of Wine, or Jar of Honey: value of card +1
 UCard* APurpleAIController::UsePotterPower(UCard* contribution)
