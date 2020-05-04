@@ -227,6 +227,7 @@ void APurpleAIController::DiscardHelper(UCard * card)
 		{
 			Transgressions.Add(card);
 		}
+		currentGameMode->shepherdPowerCard = card;
 	}
 	else
 	{

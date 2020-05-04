@@ -152,6 +152,7 @@ void APurpleController::DiscardHelper(UCard * card)
 		}
 
 		SubtractFromPlayerStanding(1);
+		currentGameMode->shepherdPowerCard = card;
 	}
 	else
 	{
