@@ -1256,12 +1256,15 @@ bool APurpleAIController::UseShepherdPower()
 	for (int i = 0; i < currentGameMode->players.Num(); i++)
 	{
 		if (currentGameMode->players[i]->roleString == "SHEPHERD")
+		{
 			index = i;
+			break;
+		}
 	}
 	//AI will only take discard >=5 in value
-	if (draw->GetDoubleProperty("value") >=5)
+	if (draw->GetDoubleProperty("value") >= 5)
 	{
-		if (draw->currentOwner != currentGameMode->players[index]->playerRole->name 
+		if (draw->currentOwner != currentGameMode->players[index]->playerRole->name
 			&& draw->currentOwner != "Any")
 		{
 			currentGameMode->players[index]->playerFoundObjects.Add(draw);
@@ -1270,6 +1273,8 @@ bool APurpleAIController::UseShepherdPower()
 		currentGameMode->players[index]->playerHand.Add(draw);
 		currentGameMode->shepherdPower = true;
 	}
+	else
+		currentGameMode->shepherdPowerCard = nullptr;
 	return currentGameMode->shepherdPower;
 }
 //if card is Empty Vessel, Jar of Milk, Vessel of Wine, or Jar of Honey: value of card +1

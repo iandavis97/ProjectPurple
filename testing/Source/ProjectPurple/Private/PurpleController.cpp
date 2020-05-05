@@ -867,7 +867,10 @@ void APurpleController::UseShepherdPower()
 	for (int i = 0; i < currentGameMode->players.Num(); i++)
 	{
 		if (currentGameMode->players[i]->roleString == "SHEPHERD")
+		{
 			index = i;
+			break;
+		}
 	}
 	if (currentGameMode->shepherdPowerCard->currentOwner != currentGameMode->players[index]->playerRole->name 
 		&& currentGameMode->shepherdPowerCard->currentOwner != "Any")
