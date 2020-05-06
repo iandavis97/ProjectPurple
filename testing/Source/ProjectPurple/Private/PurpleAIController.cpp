@@ -1273,8 +1273,6 @@ bool APurpleAIController::UseShepherdPower()
 		currentGameMode->players[index]->playerHand.Add(draw);
 		currentGameMode->shepherdPower = true;
 	}
-	else
-		currentGameMode->shepherdPowerCard = nullptr;
 	return currentGameMode->shepherdPower;
 }
 //if card is Empty Vessel, Jar of Milk, Vessel of Wine, or Jar of Honey: value of card +1
